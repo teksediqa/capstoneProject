@@ -1,6 +1,7 @@
 package tek.sdet.framework.steps;
 
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -21,7 +22,10 @@ public class HomeSteps extends CommonUtility{
 		click(factory.homePage().AllElements); 
 		logger.info("User click on All section link");
 		
-	}  
+	}   
+	
+	
+	
 	
 	@And("User on {string}")
 	public void userOnDepartment(String department) { 
@@ -30,7 +34,7 @@ public class HomeSteps extends CommonUtility{
 			if(element.getText().equals(department)) { 
 				element.click();
 				break; 
-			}
+			}  
 		}
 		
 	} 

@@ -4,10 +4,14 @@ Feature: Retail Home Page
     Given User is on retail website
     When User click on All section
 
-  @RetailHome1
+  @AllSection
   Scenario: Verify Shop by Department sidebar
     Then below options are present in Shop by Department sidebar
       | Electronics | Computers | Smart Home | Sports | Automative |
+
+
+
+
 
   @retailHomePage
   Scenario Outline: Verify department sidbar options
@@ -23,6 +27,12 @@ Feature: Retail Home Page
       | 'Sports'      | Athletic Clothing              | Exercise & Fitness       |
       | 'Automotive'  | Automative Parts & Accessories | MotorCycle & Powersports |
 
+
+
+
+
+
+  
   Scenario: Verify User can add an item to cart
     Given User is on retail website
     When User click on Sign in option

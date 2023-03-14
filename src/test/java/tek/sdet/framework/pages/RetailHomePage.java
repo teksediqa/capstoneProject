@@ -23,7 +23,7 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(linkText = "TEKSCHOOL") // this is same as driver.findElement() 
 	public WebElement tekschoolLogo;
 	
-	@FindBy(id = "searchInput")
+	@FindBy(id = "searchInput")  
 	public WebElement searchBarInput;
 	
 	@FindBy(id = "searchBtn")
@@ -38,8 +38,24 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(xpath ="//a[text()='Account']")
 	public WebElement accountOption; 
 	
-	@FindBy(xpath="//span[contains(text(),'All')]")
-	public WebElement AllElements;  
+	@FindBy(xpath="//span[contains(text(),'All')]") 
+	public WebElement AllElements;   
+	
+	@FindBy(xpath="//span[contains(text(),'Electronics')]") 
+	public WebElement electronics; 
+	
+	@FindBy(xpath="//span[contains(text(),'Computers')]") 
+	public WebElement computers;  
+	
+	@FindBy(xpath=" //span[contains(text(),'Smart Home')]") 
+	public WebElement smartHome; 
+	
+	@FindBy(xpath= "//span[contains(text(),'Sports')]") 
+	public WebElement sports; 
+	
+	@FindBy(xpath="//span[contains(text(),'Automative')]") 
+	
+	public WebElement automative; 
 	
 	@FindBy(xpath="//div[@class='sidebar_content-item']//span") 
 	public List<WebElement> sideBar;  
