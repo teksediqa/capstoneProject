@@ -3,14 +3,14 @@ Feature: Retail Account feature
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'Adil.adib@gmail.com' and password 'Zadaf@12345'
+    And User enter email 'tayeb.mobariz@gmail.com' and password 'Tayeb@1234'
     And User click on login button
     And User should be logged in into Account
 
-  @UpdateAccount @signIn
+  @UpdateAccount 
   Scenario: Verify User can update Profile Information
     When User click on Account option
-    And User update Name 'Ania' and Phone '78965785654'
+    And User update Name 'Aisha' and Phone '78965785643'
     And User click on Update button
     Then User profile information should be updated
 
@@ -44,7 +44,7 @@ Feature: Retail Account feature
     And User click on Update Your Card button
     Then a message should be displayed ‘Payment Method updated Successfully
 
-  @Remove
+  @RemoveCard
   Scenario: Verify User can remove Debit or Credit card
     When User click on Account option
     When User click on card option

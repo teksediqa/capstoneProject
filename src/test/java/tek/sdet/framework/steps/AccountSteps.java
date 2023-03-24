@@ -23,7 +23,10 @@ public class AccountSteps extends CommonUtility{
 	@When("User click on Account option")
 	public void userClickOnAccountOption() { 
 		click(factory.homePage().accountOption);
-	}
+	} 
+	
+	
+	//Update Account Information-------------------------
 	 
 	@And("User update Name {string} and Phone {string}") 
 	public void userUpdateNameAndPhone(String NameValue, String PhoneValue  ) { 
@@ -52,7 +55,9 @@ public class AccountSteps extends CommonUtility{
 		String expectedMessage = "Personal Information Updated Successfully"; 
 		Assert.assertEquals(expectedMessage, actualMessage ); 
 		logger.info("User Profile Information Updated");
-	} 
+	}  
+	
+	//update password---------------------------
 	
 	@And("User enter below information")
 	public void userEnterBelowInformation(DataTable dataTable) {  
@@ -78,6 +83,8 @@ public class AccountSteps extends CommonUtility{
 		waitTillPresence(factory.accountPage().passwordUpdatedSuccessfully);
 		logger.info("message displayed");
 	}
+	
+	//Add Payment Method-------------------------------- 
 	
 	
 	 @And("User click on Add a payment method link") 
@@ -113,7 +120,11 @@ public class AccountSteps extends CommonUtility{
 		 logger.info("message displyed");
 	     
 	   
-	 }  
+	 }   
+	 
+	 
+	 // Edit Payment method---------------- 
+	 
 	 
 	 @And("User click on master card image") 
 	 public void userClickeOnMasterCardImage() { 
@@ -154,7 +165,7 @@ public class AccountSteps extends CommonUtility{
 		 logger.info("message diplyed update successfullly");
 	 }  
 	 
-	// -------------------------------------------
+	// Remove car Information-------------------------------------------
 	 
 	 @When("User click on card option")
 	 public void userClickOnMasterCardPicture() { 
@@ -171,14 +182,15 @@ public class AccountSteps extends CommonUtility{
 	 
 	  @Then("Payment details should be removed") 
 	  public void paymentDetailsShouldBeRemoved() {  
-		  isElementDisplayed(factory.accountPage().removeButton); 
+		  Assert.assertTrue(isElementDisplayed(factory.accountPage().removeButton));
+		//  isElementDisplayed(factory.accountPage().removeButton); 
 		  logger.info("payment details is removed");
 		  
 	  }
 	 
 		  
 	  
-	// -------------------------------------------
+	// Add Addresss-------------------------------------------
 	  
 	  @And("User click on Add address option") 
 	  public void userClickOnAddAddressOption() {  
@@ -215,7 +227,7 @@ public class AccountSteps extends CommonUtility{
 		  
 	  }
 	  
-	  // -------------------------------------------------- 
+	  // Edit Address-------------------------------------------------- 
 	  
 	  @And("User click on edit address option")
 	  public void userClickOnEditAddressOption() {   
@@ -257,7 +269,9 @@ public class AccountSteps extends CommonUtility{
 			  logger.info("address updated successfully");
 	   } 
 	   
-	   //----------------------------------------------------------------- 
+	   //Remove address------------------------------------------ 
+	   
+	   
 	   @And("User click on remove option of Address section")
 	   public void userClickOnRemoveOptionOfAddressSection() {  
 		   click(factory.accountPage().addressRemoveBtn); 

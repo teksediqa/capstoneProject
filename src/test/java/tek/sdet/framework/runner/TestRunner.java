@@ -7,7 +7,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@retailHomePage",
+		tags = "@UpdateAccount",
 		features = "classpath:features", // this is path to features folder
 		glue ="tek.sdet.framework",
 		dryRun = false,
@@ -17,7 +17,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
                 "json:target/jsonReports/cucumber.json"
 		},
 		snippets = CAMELCASE,
-		monochrome = true
+		monochrome = true  
 		)
 public class TestRunner { 
 
