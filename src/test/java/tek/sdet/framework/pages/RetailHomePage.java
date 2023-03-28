@@ -84,7 +84,7 @@ public class RetailHomePage extends BaseSetup {
 	
 	
 	@FindBy(xpath="//p[contains(text(),'Order Placed, Thanks')]")
-	public WebElement orderPlacedMessage; 
+	public WebElement orderPlaced;
 	
 	@FindBy(xpath="//p[contains(text(),'Cart')]") 
 	public WebElement cartOption; 
@@ -98,7 +98,7 @@ public class RetailHomePage extends BaseSetup {
 	@FindBy(xpath="//button[@id='addPaymentBtn']") 
 	public WebElement orderPaymentBtn; 
 	
-	@FindBy(xpath="//button[@id='placeOrderBtn']") 
+	@FindBy(xpath="//button[text()='Place Your Order']") 
 	public WebElement placeOrderBtn; 
 	
 	@FindBy(xpath="//div[contains(text(),'Order Placed Successfully')]") 
@@ -160,5 +160,8 @@ public class RetailHomePage extends BaseSetup {
 	public WebElement paymentBtn;  
 	
 	@FindBy(xpath="//a[@id='orderLink']") 
-	public WebElement orderButton; 
+	public WebElement orderButton;  
+	
+	@FindBy(xpath="//img[contains(@alt, 'Apex Legends - 1,000 Apex Coins')]") 
+	public WebElement apexLegendsPicture;
 }

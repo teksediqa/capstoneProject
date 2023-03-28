@@ -3,7 +3,7 @@ Feature: Retail Account feature
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'tayeb.mobariz@gmail.com' and password 'Tayeb@1234'
+    And User enter email 'tayeb.mobariz@gmail.com' and password 'Zafar@1234'
     And User click on login button
     And User should be logged in into Account
 
@@ -19,11 +19,11 @@ Feature: Retail Account feature
     When User click on Account option
     And User enter below information
       | previousPassword | newPassword | confirmPassword |
-      | Gadaf@12345      | Zadaf@12345 | Zadaf@12345     |
+      | Tayeb@1234     | Zafar@1234 | Zafar@1234     |
     And User click on Change Password button
     Then a message should be displayed ‘Password Updated Successfully
 
-  @AddPayment @signIn
+  @AddPayment 
   Scenario: Verify User can add a payment method
     When User click on Account option
     And User click on Add a payment method link
@@ -40,7 +40,7 @@ Feature: Retail Account feature
     And User click on Edit option of card section
     And User edit information with below data
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 2345768902345656 | Amant      |               4 |           2026 |          234 |
+      | 2345768902340001 | Amano      |               4 |           2026 |          234 |
     And User click on Update Your Card button
     Then a message should be displayed ‘Payment Method updated Successfully
 
@@ -72,7 +72,7 @@ Feature: Retail Account feature
     Then a message should be displayed ‘Address Updated Successfully
     
     
-    @RemoveAddress
+    @removeAddress
   Scenario: Verify User can remove Address from Account
     When User click on Account option
     And User click on remove option of Address section

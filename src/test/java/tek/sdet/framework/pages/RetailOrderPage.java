@@ -19,7 +19,7 @@ public class RetailOrderPage extends BaseSetup {
 	public WebElement orderCancel; 
 	
 	
-	@FindBy(xpath="//div[contains(@data-id, '4173')]")
+	@FindBy(xpath="//div[contains(@data-id, '4426')]")
 	public WebElement headerOne; 
 	
 	@FindBy(xpath ="//select[@id='reasonInput']") 
@@ -31,7 +31,7 @@ public class RetailOrderPage extends BaseSetup {
 	@FindBy(xpath="//p[contains(text(),'Your Order Has Been Cancelled')]")
 	public WebElement orderCancelMessage;  
 	
-	@FindBy(xpath="//div[contains(@data-id,'4175')]")
+	@FindBy(xpath="//div[contains(@data-id,'4427')]")
 	public WebElement returnheaderOne; 
 	
 	@FindBy(xpath="//div[@class= 'order']") 
@@ -57,7 +57,7 @@ public class RetailOrderPage extends BaseSetup {
 	
 	//Review-------------------------------  
 	
-	@FindBy(xpath="//div[contains(@data-id,'4176')]") 
+	@FindBy(xpath="//div[contains(@data-id,'4429')]") 
 	public WebElement reviewHeader;
 	
 	@FindBy(xpath="//button[@id='reviewBtn']")
@@ -74,5 +74,11 @@ public class RetailOrderPage extends BaseSetup {
 	
 	@FindBy(xpath= "//div[contains(text(),'Your review was added successfully')]") 
 	public WebElement reviewAddedSuccessfully; 
+	
+	@FindBy(xpath="//button[text()='Place Your Order']") 
+	public WebElement placeOrderBtn;  
+	
+	@FindBy(xpath="//div[contains(text(),'Order Placed Successfully')]") 
+	public WebElement orderplacedsuccessfully;  
 
 }

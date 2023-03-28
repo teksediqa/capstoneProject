@@ -182,8 +182,9 @@ public class AccountSteps extends CommonUtility{
 	 
 	  @Then("Payment details should be removed") 
 	  public void paymentDetailsShouldBeRemoved() {  
-		  Assert.assertTrue(isElementDisplayed(factory.accountPage().removeButton));
-		//  isElementDisplayed(factory.accountPage().removeButton); 
+		 // Assert.assertTrue(isElementDisplayed(factory.accountPage().removeButton));
+		//  isElementDisplayed(factory.accountPage().removeButton);  
+		  waitTillPresence(factory.accountPage().removeButton); 
 		  logger.info("payment details is removed");
 		  
 	  }

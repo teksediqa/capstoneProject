@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Tag: @UpdateAccount</title>
+<title>Cucumber Reports (no 1) - Tag: @creatAccount</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>24 Mar 2023, 10:57</td>
+      <td>28 Mar 2023, 11:01</td>
     </tr>
   </tbody>
 </table>
@@ -128,19 +128,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@UpdateAccount</td>
-          <td      class="passed"    >4</td>
+          <td class="tagname">@creatAccount</td>
+          <td      class="passed"    >6</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td class="total">6</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1958671900">1.958</td>
+          <td class="duration" data-value="2822028600">2.822</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,24 +173,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3514281404.html">Retail Account feature</a>
+      <a href="report-feature_2573075998.html">Retail SignIn feature</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2277162179.html">@UpdateAccount</a>
+       <a href="report-tag_642274723.html">@creatAccount</a>
 </div>
 
 
-  <span class="lead-duration duration">1.958</span>
+  <span class="lead-duration duration">2.822</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify User can update Profile Information</span>
+  <span class="name">Verify user can create an account into Retail website</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">tek.sdet.framework.base.BaseUITest.setupTests()</span>
 
-  <span class="lead-duration duration">6.451</span>
+  <span class="lead-duration duration">8.403</span>
 
           </div>
 
@@ -254,38 +254,38 @@ $(document).ready(function() {
       <div class="step">
 
 
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on retail website</span>
+
+  <span class="lead-duration duration">0.223</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">User click on Account option</span>
+  <span class="name">User click on Sign in option</span>
 
-  <span class="lead-duration duration">0.159</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">User update Name <span class="argument">'Aisha'</span> and Phone <span class="argument">'78965785643'</span></span>
-
-  <span class="lead-duration duration">0.420</span>
+  <span class="lead-duration duration">0.320</span>
 
 </div>
 
@@ -310,9 +310,77 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">User click on Update button</span>
+  <span class="name">User click on Create New account button</span>
 
-  <span class="lead-duration duration">0.125</span>
+  <span class="lead-duration duration">0.255</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User fill the signUp information with below data</span>
+
+  <span class="lead-duration duration">0.700</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>name</td>
+                  <td>email</td>
+                  <td>password</td>
+                  <td>confirmPassword</td>
+              </tr>
+              <tr>
+                  <td>Zafar</td>
+                  <td>Zafar.mobariz@gmail.com</td>
+                  <td>Zafar@1234</td>
+                  <td>Zafar@1234</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User click on SignUp button</span>
+
+  <span class="lead-duration duration">0.149</span>
 
 </div>
 
@@ -337,9 +405,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">User profile information should be updated</span>
+  <span class="name">User should be logged into account page</span>
 
-  <span class="lead-duration duration">1.253</span>
+  <span class="lead-duration duration">1.172</span>
 
 </div>
 
@@ -384,7 +452,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">tek.sdet.framework.base.BaseUITest.closeTests(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.449</span>
+  <span class="lead-duration duration">0.522</span>
 
           </div>
 

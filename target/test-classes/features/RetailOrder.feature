@@ -4,7 +4,7 @@ Feature: Retial order feature
   Scenario: Verify User can cancel the order
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'tayeb.mobariz@gmail.com' and password 'Tayeb@1234'
+    And User enter email 'tayeb.mobariz@gmail.com' and password 'Zafar@1234'
     And User click on login button
     And User should be logged in into Account
     And User click on Orders section
@@ -18,7 +18,7 @@ Feature: Retial order feature
   Scenario: Verify User can Return the order
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'tayeb.mobariz@gmail.com' and password 'Tayeb@1234'
+    And User enter email 'tayeb.mobariz@gmail.com' and password 'Zafar@1234'
     And User click on login button
     And User should be logged in into Account
     And User click on Orders section
@@ -33,7 +33,7 @@ Feature: Retial order feature
   Scenario: Verify User can write a review on order placed
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'tayeb.mobariz@gmail.com' and password 'Tayeb@1234'
+    And User enter email 'tayeb.mobariz@gmail.com' and password 'Zafar@1234'
     And User click on login button
     And User should be logged in into Account
     And User click on Orders section

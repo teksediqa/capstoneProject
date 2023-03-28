@@ -199,10 +199,36 @@ public class HomeSteps extends CommonUtility{
 		String actualMessage = message;
 		String expectedMessage = "Order Placed, Thanks";
 		Assert.assertEquals(actualMessage, expectedMessage );
-		Assert.assertTrue(isElementDisplayed(factory.homePage().orderPlacedMessage)); 	
+		Assert.assertTrue(isElementDisplayed(factory.homePage().orderPlaced)); 	
 		logger.info("message displyed");
 		
 	    
+	}  
+	
+	@And("User click on the item")
+	public void userClickOnTheItem() { 
+		click(factory.homePage().apexLegendsPicture); 
+		logger.info("user clicked on the image");
+		
 	}
-
+	
+	@Then("the cart icon quantity should be change to {string}")
+	public void theCartIconQuantityShouldBeChangeTo(String qty) {  
+		String actualQuantity = qty;
+		String expectedQuantity = "5";
+		Assert.assertEquals(actualQuantity,expectedQuantity );
+		//Assert.assertTrue(isElementDisplayed(factory.homePage().tekschoolLogo));
+		Assert.assertTrue(isElementDisplayed(factory.homePage().cartQuantity)); 
+		logger.info("cart quantity icone is changed");
+	} 
+	@Then("a message should displayed {string}")
+	public void aMessageShouldDisplayed(String message) {  
+		String actualMessage = message;
+		String expectedMessage = "Order Placed, Thanks";
+		Assert.assertEquals(actualMessage, expectedMessage );
+		Assert.assertTrue(isElementDisplayed(factory.homePage().orderPlaced)); 	
+		logger.info("message displyed");
+		
+	    
+	} 
 }

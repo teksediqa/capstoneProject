@@ -14,6 +14,9 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(css= "#profileImage") 
 	public WebElement accountProfilePicture;  
 	
+	@FindBy(xpath="//img[@id='profileImage']")
+	public WebElement proFileimage; 
+	
 	@FindBy(xpath="//a[@id='accountLink']")
 	public WebElement accountLink;
 	 
